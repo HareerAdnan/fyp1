@@ -2,13 +2,36 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
+import Typewriter from "typewriter-effect";
 
 function HeroSection() {
   return (
     <div className='hero-container'>
       <video src='/videos/vid6.mp4' autoPlay loop muted />
       <h1>WE POWER YOU TO SUCCEED!</h1>
-      <p>Start your preparation with Pakistan's most innovative learning platfrom!
+      <p>
+     <div className="App">
+      <Typewriter 
+
+      options={{ autoStart: true,
+      loop: true,
+    }}
+  
+    onInit={(Typewriter)=> {
+  
+      Typewriter
+       
+       .typeString("Start your preparation with Pakistan's most innovative learning platfrom")
+       .pauseFor(2000)
+       .deleteAll()
+       .typeString("Gallery of National and International tests")
+       .pauseFor(3000)
+       .deleteAll()
+       .typeString("ETEA, MDCAT, IELETS, SAT, TOFEL")
+       .start();
+       }}
+       />
+    </div>
       </p>
       <div className='hero-btns'>
         <Button

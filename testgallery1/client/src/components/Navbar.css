@@ -28,7 +28,8 @@
     display: flex;
     align-items: center;
   }
-  
+
+
   .nav-menu {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -112,7 +113,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(25%, 50%);
+      transform: translate(0%, 0%);
     }
   
     .menu-icon {

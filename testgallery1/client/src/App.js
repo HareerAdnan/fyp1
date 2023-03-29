@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 import Scholorships from './components/pages/Scholorships';
 import Entrytest from './components/pages/Entrytest';
-import SignUp from './components/pages/SignUp'
+import SignUp from './components/pages/SignUp';
 
 function App() {
   return (
